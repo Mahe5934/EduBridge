@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - EduBridge</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>EduBridge</h1>
+                <p>Connecting Rural Colleges to Quality Education</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="lecture.html">Lecture</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Available Courses</h1>
+                <p>Explore our catalog of courses designed for rural college students</p>
+            </div>
+        </section>
+
+        <section class="courses-filter">
+            <div class="container">
+                <div class="filter-controls">
+                    <div class="search-group">
+                        <input type="text" id="searchInput" placeholder="Search courses...">
+                        <button id="clearSearchBtn" class="clear-btn" title="Clear search">&times;</button>
+                    </div>
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="science">Science</option>
+                        <option value="technology">Technology</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="humanities">Humanities</option>
+                        <option value="business">Business</option>
+                    </select>
+                    <select id="sortFilter">
+                        <option value="popular">Most Popular</option>
+                        <option value="newest">Newest First</option>
+                        <option value="a-z">Title A-Z</option>
+                        <option value="z-a">Title Z-A</option>
+                        <option value="duration">Duration</option>
+                    </select>
+                    <button id="searchBtn">Search</button>
+                </div>
+                <div class="active-filters">
+                    <span id="activeFiltersCount">Showing all courses</span>
+                    <button id="clearFiltersBtn" class="clear-filters-btn" style="display: none;">Clear All Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses-list">
+            <div class="container">
+                <div class="course-grid">
+                    <div class="course-card" data-category="technology" data-title="introduction to computer science">
+                        <div class="course-image">
+                            <img src="images/course1.jpg" alt="Introduction to Computer Science">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Technology</span>
+                            <h3>Introduction to Computer Science</h3>
+                            <p>Learn the fundamentals of computer science, programming, and computational thinking.</p>
+                            <div class="course-meta">
+                                <span class="lectures">24 lectures</span>
+                                <span class="duration">40 hours</span>
+                            </div>
+                            <a href="course-detail.html" class="btn">View Course</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="mathematics" data-title="advanced mathematics">
+                        <div class="course-image">
+                            <img src="images/course2.jpg" alt="Advanced Mathematics">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Mathematics</span>
+                            <h3>Advanced Mathematics</h3>
+                            <p>Deep dive into calculus, linear algebra, and differential equations.</p>
+                            <div class="course-meta">
+                                <span class="lectures">30 lectures</span>
+                                <span class="duration">50 hours</span>
+                            </div>
+                            <a href="course-detail.html" class="btn">View Course</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="science" data-title="environmental science">
+                        <div class="course-image">
+                            <img src="images/course3.jpg" alt="Environmental Science">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Science</span>
+                            <h3>Environmental Science</h3>
+                            <p>Explore ecosystems, climate change, and sustainable development practices.</p>
+                            <div class="course-meta">
+                                <span class="lectures">20 lectures</span>
+                                <span class="duration">35 hours</span>
+                            </div>
+                            <a href="course-detail.html" class="btn">View Course</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="business" data-title="business management">
+                        <div class="course-image">
+                            <img src="images/course4.jpg" alt="Business Management">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Business</span>
+                            <h3>Business Management</h3>
+                            <p>Learn essential business principles, leadership, and organizational behavior.</p>
+                            <div class="course-meta">
+                                <span class="lectures">22 lectures</span>
+                                <span class="duration">38 hours</span>
+                            </div>
+                            <a href="course-detail.html" class="btn">View Course</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="humanities" data-title="literature and society">
+                        <div class="course-image">
+                            <img src="images/course5.jpg" alt="Literature and Society">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Humanities</span>
+                            <h3>Literature and Society</h3>
+                            <p>Examine how literature reflects and shapes social values and cultural norms.</p>
+                            <div class="course-meta">
+                                <span class="lectures">18 lectures</span>
+                                <span class="duration">30 hours</span>
+                            </div>
+                            <a href="course-detail.html" class="btn">View Course</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="engineering" data-title="electrical engineering basics">
+                        <div class="course-image">
+                            <img src="images/course6.jpg" alt="Electrical Engineering Basics">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Engineering</span>
+                            <h3>Electrical Engineering Basics</h3>
+                            <p>Introduction to circuits, electronics, and electrical systems fundamentals.</p>
+                            <div class="course-meta">
+                                <span class="lectures">26 lectures</span>
+                                <span class="duration">45 hours</span>
+                            </div>
+                            <a href="course-detail.html" class="btn">View Course</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="technology" data-title="web development fundamentals">
+                        <div class="course-image">
+                            <img src="images/course7.jpg" alt="Web Development Fundamentals">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Technology</span>
+                            <h3>Web Development Fundamentals</h3>
+                            <p>Learn HTML, CSS, and JavaScript to build responsive websites.</p>
+                            <div class="course-meta">
+                                <span class="lectures">28 lectures</span>
+                                <span class="duration">42 hours</span>
+                            </div>
+                            <a href="course-detail.html" class="btn">View Course</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="science" data-title="biology essentials">
+                        <div class="course-image">
+                            <img src="images/course8.jpg" alt="Biology Essentials">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Science</span>
+                            <h3>Biology Essentials</h3>
+                            <p>Introduction to cell biology, genetics, evolution, and ecology.</p>
+                            <div class="course-meta">
+                                <span class="lectures">25 lectures</span>
+                                <span class="duration">37 hours</span>
+                            </div>
+                            <a href="course-detail.html" class="btn">View Course</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <button class="prev-btn">Previous</button>
+                    <span class="page-info">Page 1 of 2</span>
+                    <button class="next-btn">Next</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EduBridge</h3>
+                    <p>Connecting rural colleges to quality education through technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@edubridge.edu</p>
+                    <p>Phone: +91 98765 43210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EduBridge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const categoryFilter = document.getElementById('categoryFilter');
+            const sortFilter = document.getElementById('sortFilter');
+            const searchBtn = document.getElementById('searchBtn');
+            const clearSearchBtn = document.getElementById('clearSearchBtn');
+            const clearFiltersBtn = document.getElementById('clearFiltersBtn');
+            const activeFiltersCount = document.getElementById('activeFiltersCount');
+            const courseCards = document.querySelectorAll('.course-card');
+            
+            // Initialize filter counts
+            updateActiveFiltersCount();
+            
+            // Search button event
+            if (searchBtn) {
+                searchBtn.addEventListener('click', filterCourses);
+            }
+            
+            // Enter key in search input
+            if (searchInput) {
+                searchInput.addEventListener('keyup', function(event) {
+                    if (event.key === 'Enter') {
+                        filterCourses();
+                    }
+                });
+            }
+            
+            // Category filter change
+            if (categoryFilter) {
+                categoryFilter.addEventListener('change', filterCourses);
+            }
+            
+            // Sort filter change
+            if (sortFilter) {
+                sortFilter.addEventListener('change', sortCourses);
+            }
+            
+            // Clear search button
+            if (clearSearchBtn) {
+                clearSearchBtn.addEventListener('click', function() {
+                    if (searchInput) {
+                        searchInput.value = '';
+                        filterCourses();
+                    }
+                });
+            }
+            
+            // Clear filters button
+            if (clearFiltersBtn) {
+                clearFiltersBtn.addEventListener('click', function() {
+                    if (searchInput) searchInput.value = '';
+                    if (categoryFilter) categoryFilter.value = 'all';
+                    if (sortFilter) sortFilter.value = 'popular';
+                    filterCourses();
+                });
+            }
+            
+            // Filter courses based on search input and category
+            function filterCourses() {
+                const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
+                const selectedCategory = categoryFilter ? categoryFilter.value : 'all';
+                
+                let visibleCount = 0;
+                
+                courseCards.forEach(card => {
+                    const title = card.getAttribute('data-title') || '';
+                    const category = card.getAttribute('data-category') || '';
+                    
+                    const matchesSearch = searchTerm === '' || 
+                                         title.includes(searchTerm);
+                    
+                    const matchesCategory = selectedCategory === 'all' || 
+                                           category.includes(selectedCategory);
+                    
+                    if (matchesSearch && matchesCategory) {
+                        card.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                // Update active filters count
+                updateActiveFiltersCount(visibleCount);
+                
+                // Show/hide clear filters button
+                const hasFilters = searchTerm !== '' || selectedCategory !== 'all';
+                if (clearFiltersBtn) {
+                    clearFiltersBtn.style.display = hasFilters ? 'inline-block' : 'none';
+                }
+            }
+            
+            // Sort courses
+            function sortCourses() {
+                const sortBy = sortFilter ? sortFilter.value : 'popular';
+                const courseGrid = document.querySelector('.course-grid');
+                
+                if (!courseGrid) return;
+                
+                // Convert NodeList to Array for sorting
+                const cardsArray = Array.from(courseCards);
+                
+                // Sort based on selected option
+                cardsArray.sort((a, b) => {
+                    const titleA = a.querySelector('h3').textContent.toLowerCase();
+                    const titleB = b.querySelector('h3').textContent.toLowerCase();
+                    const durationA = parseInt(a.querySelector('.duration').textContent) || 0;
+                    const durationB = parseInt(b.querySelector('.duration').textContent) || 0;
+                    
+                    switch (sortBy) {
+                        case 'a-z':
+                            return titleA.localeCompare(titleB);
+                        case 'z-a':
+                            return titleB.localeCompare(titleA);
+                        case 'duration':
+                            return durationA - durationB;
+                        case 'newest':
+                            // For demo purposes, we'll reverse the order
+                            return Array.from(courseCards).indexOf(b) - Array.from(courseCards).indexOf(a);
+                        default: // popular
+                            // For demo purposes, we'll keep the original order
+                            return Array.from(courseCards).indexOf(a) - Array.from(courseCards).indexOf(b);
+                    }
+                });
+                
+                // Re-append sorted cards to the grid
+                cardsArray.forEach(card => {
+                    courseGrid.appendChild(card);
+                });
+            }
+            
+            // Update active filters count
+            function updateActiveFiltersCount(count) {
+                if (!activeFiltersCount) return;
+                
+                if (count !== undefined) {
+                    activeFiltersCount.textContent = `Showing ${count} of ${courseCards.length} courses`;
+                } else {
+                    // Count visible courses
+                    const visibleCourses = Array.from(courseCards).filter(card => 
+                        card.style.display !== 'none'
+                    ).length;
+                    activeFiltersCount.textContent = `Showing ${visibleCourses} of ${courseCards.length} courses`;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

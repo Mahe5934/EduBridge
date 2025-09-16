@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture - EduBridge</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>EduBridge</h1>
+                <p>Connecting Rural Colleges to Quality Education</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="lecture.html" class="active">Lecture</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Introduction to Python Programming</h1>
+                <p>Module 1: Introduction to Programming</p>
+            </div>
+        </section>
+
+        <section class="lecture-content">
+            <div class="container">
+                <div class="lecture-video">
+                    <div class="video-container">
+                        <!-- Placeholder for video player -->
+                        <div class="video-placeholder">
+                            <div class="play-button">▶</div>
+                            <p>Video Lecture: Introduction to Python Programming</p>
+                            <p class="video-duration">Duration: 45 minutes</p>
+                        </div>
+                    </div>
+                    <div class="video-controls">
+                        <button class="btn" id="playPauseBtn">Play</button>
+                        <button class="btn" id="downloadBtn">Download Lecture</button>
+                        <div class="volume-control">
+                            <label for="volumeSlider">Volume:</label>
+                            <input type="range" id="volumeSlider" min="0" max="100" value="80">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lecture-details">
+                    <div class="lecture-description">
+                        <h2>Lecture Description</h2>
+                        <p>This lecture introduces the fundamental concepts of Python programming. Students will learn about Python syntax, basic data types, and how to write their first Python programs. The lecture includes practical examples and coding exercises to reinforce learning.</p>
+                    </div>
+
+                    <div class="lecture-resources">
+                        <h2>Resources</h2>
+                        <ul>
+                            <li><a href="notes.html">Lecture Notes (PDF)</a></li>
+                            <li><a href="notes.html">Code Examples</a></li>
+                            <li><a href="quiz.html">Practice Quiz</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="lecture-navigation">
+                        <h2>Navigation</h2>
+                        <div class="navigation-buttons">
+                            <a href="#" class="btn">Previous Lecture</a>
+                            <a href="#" class="btn">Next Lecture</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EduBridge</h3>
+                    <p>Connecting rural colleges to quality education through technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@edubridge.edu</p>
+                    <p>Phone: +91 98765 43210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EduBridge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Simple video player controls
+        document.addEventListener('DOMContentLoaded', function() {
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const downloadBtn = document.getElementById('downloadBtn');
+            const volumeSlider = document.getElementById('volumeSlider');
+            
+            if (playPauseBtn) {
+                playPauseBtn.addEventListener('click', function() {
+                    if (playPauseBtn.textContent === 'Play') {
+                        playPauseBtn.textContent = 'Pause';
+                    } else {
+                        playPauseBtn.textContent = 'Play';
+                    }
+                });
+            }
+            
+            if (downloadBtn) {
+                downloadBtn.addEventListener('click', function() {
+                    alert('Lecture download started. This may take a moment depending on your connection speed.');
+                });
+            }
+            
+            if (volumeSlider) {
+                volumeSlider.addEventListener('input', function() {
+                    // In a real implementation, this would control the video volume
+                    console.log('Volume set to: ' + volumeSlider.value + '%');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Notes - EduBridge</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>EduBridge</h1>
+                <p>Connecting Rural Colleges to Quality Education</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="lecture.html">Lecture</a></li>
+                    <li><a href="notes.html" class="active">Notes</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Python Basics Cheat Sheet</h1>
+                <p>Introduction to Computer Science - Lecture Notes</p>
+            </div>
+        </section>
+
+        <section class="notes-content">
+            <div class="container">
+                <div class="notes-header">
+                    <div class="notes-meta">
+                        <span class="course-name">Introduction to Computer Science</span>
+                        <span class="lecture-name">Introduction to Python Programming</span>
+                        <span class="date">Last Updated: September 15, 2025</span>
+                    </div>
+                    <div class="notes-actions">
+                        <button class="btn" id="downloadPdfBtn">Download PDF</button>
+                        <button class="btn" id="downloadTxtBtn">Download Text</button>
+                    </div>
+                </div>
+
+                <div class="notes-body">
+                    <div class="notes-section">
+                        <h2>Python Syntax Basics</h2>
+                        <p>Python uses indentation to define code blocks instead of curly braces or keywords. This makes Python code highly readable.</p>
+                        <pre><code># Example of Python indentation
+if 5 > 2:
+    print("Five is greater than two!")
+    if 5 > 3:
+        print("Five is also greater than three!")</code></pre>
+                    </div>
+
+                    <div class="notes-section">
+                        <h2>Variables and Data Types</h2>
+                        <p>Python is dynamically typed, meaning you don't need to declare variable types explicitly.</p>
+                        <pre><code># Variable assignment
+x = 5           # Integer
+y = "Hello"     # String
+z = 3.14        # Float
+is_valid = True # Boolean</code></pre>
+                        
+                        <h3>Common Data Types:</h3>
+                        <ul>
+                            <li><strong>int</strong> - Integer numbers (e.g., 5, -3, 42)</li>
+                            <li><strong>float</strong> - Decimal numbers (e.g., 3.14, -2.5)</li>
+                            <li><strong>str</strong> - Text strings (e.g., "Hello", 'World')</li>
+                            <li><strong>bool</strong> - Boolean values (True or False)</li>
+                        </ul>
+                    </div>
+
+                    <div class="notes-section">
+                        <h2>Basic Operations</h2>
+                        <h3>Arithmetic Operators:</h3>
+                        <ul>
+                            <li><strong>+</strong> - Addition</li>
+                            <li><strong>-</strong> - Subtraction</li>
+                            <li><strong>*</strong> - Multiplication</li>
+                            <li><strong>/</strong> - Division</li>
+                            <li><strong>//</strong> - Floor division</li>
+                            <li><strong>%</strong> - Modulus (remainder)</li>
+                            <li><strong>**</strong> - Exponentiation</li>
+                        </ul>
+                        
+                        <pre><code># Examples
+result = 10 + 5     # 15
+result = 10 / 3     # 3.333...
+result = 10 // 3    # 3
+result = 10 % 3     # 1</code></pre>
+                    </div>
+
+                    <div class="notes-section">
+                        <h2>Control Structures</h2>
+                        <h3>If Statements:</h3>
+                        <pre><code>age = 18
+if age >= 18:
+    print("You are an adult")
+elif age >= 13:
+    print("You are a teenager")
+else:
+    print("You are a child")</code></pre>
+                        
+                        <h3>Loops:</h3>
+                        <pre><code># For loop
+for i in range(5):
+    print(i)  # Prints 0, 1, 2, 3, 4
+
+# While loop
+count = 0
+while count < 5:
+    print(count)
+    count += 1</code></pre>
+                    </div>
+
+                    <div class="notes-section">
+                        <h2>Functions</h2>
+                        <p>Functions are defined using the <code>def</code> keyword:</p>
+                        <pre><code>def greet(name):
+    return f"Hello, {name}!"
+
+message = greet("Alice")
+print(message)  # Output: Hello, Alice!</code></pre>
+                    </div>
+
+                    <div class="notes-section">
+                        <h2>Lists</h2>
+                        <p>Lists are ordered collections that can contain different data types:</p>
+                        <pre><code># Creating a list
+fruits = ["apple", "banana", "cherry"]
+
+# Accessing elements
+first_fruit = fruits[0]  # "apple"
+
+# Adding elements
+fruits.append("orange")
+
+# Length of list
+count = len(fruits)</code></pre>
+                    </div>
+
+                    <div class="notes-section">
+                        <h2>Best Practices</h2>
+                        <ul>
+                            <li>Use meaningful variable names</li>
+                            <li>Comment your code for complex logic</li>
+                            <li>Follow PEP 8 style guide for Python code</li>
+                            <li>Test your code with different inputs</li>
+                            <li>Handle errors gracefully with try/except blocks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="notes-navigation">
+                    <a href="#" class="btn">Previous Note</a>
+                    <a href="#" class="btn">Next Note</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EduBridge</h3>
+                    <p>Connecting rural colleges to quality education through technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@edubridge.edu</p>
+                    <p>Phone: +91 98765 43210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EduBridge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Download functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const downloadPdfBtn = document.getElementById('downloadPdfBtn');
+            const downloadTxtBtn = document.getElementById('downloadTxtBtn');
+            
+            if (downloadPdfBtn) {
+                downloadPdfBtn.addEventListener('click', function() {
+                    alert('PDF download started. This may take a moment depending on your connection speed.');
+                });
+            }
+            
+            if (downloadTxtBtn) {
+                downloadTxtBtn.addEventListener('click', function() {
+                    alert('Text file download started. This may take a moment depending on your connection speed.');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

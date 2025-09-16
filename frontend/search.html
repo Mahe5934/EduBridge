@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - EduBridge</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>EduBridge</h1>
+                <p>Connecting Rural Colleges to Quality Education</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="lecture.html">Lecture</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Search Results</h1>
+                <p>Find courses, lectures, notes, and quizzes</p>
+            </div>
+        </section>
+
+        <section class="search-content">
+            <div class="container">
+                <div class="search-form">
+                    <form id="searchForm">
+                        <div class="search-input-group">
+                            <input type="text" id="searchInput" placeholder="Search for courses, lectures, notes, or quizzes..." value="python">
+                            <button type="submit" class="btn">Search</button>
+                        </div>
+                        <div class="search-filters">
+                            <select id="contentTypeFilter">
+                                <option value="all">All Content Types</option>
+                                <option value="courses">Courses</option>
+                                <option value="lectures">Lectures</option>
+                                <option value="notes">Notes</option>
+                                <option value="quizzes">Quizzes</option>
+                            </select>
+                            <select id="categoryFilter">
+                                <option value="all">All Categories</option>
+                                <option value="technology">Technology</option>
+                                <option value="science">Science</option>
+                                <option value="mathematics">Mathematics</option>
+                                <option value="business">Business</option>
+                                <option value="humanities">Humanities</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="search-results">
+                    <div class="results-header">
+                        <h2>Search Results for "python"</h2>
+                        <p>Found 12 results</p>
+                    </div>
+
+                    <div class="results-list">
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <span class="icon">📚</span>
+                            </div>
+                            <div class="result-content">
+                                <h3><a href="course-detail.html">Introduction to Computer Science</a></h3>
+                                <p class="result-description">Learn the fundamentals of computer science, programming, and computational thinking with Python.</p>
+                                <div class="result-meta">
+                                    <span class="result-type">Course</span>
+                                    <span class="result-category">Technology</span>
+                                    <span class="result-duration">40 hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <span class="icon">🎥</span>
+                            </div>
+                            <div class="result-content">
+                                <h3><a href="lecture.html">Introduction to Python Programming</a></h3>
+                                <p class="result-description">Learn the basics of Python programming including variables, data types, and control structures.</p>
+                                <div class="result-meta">
+                                    <span class="result-type">Lecture</span>
+                                    <span class="result-course">Introduction to Computer Science</span>
+                                    <span class="result-duration">45 min</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <span class="icon">📝</span>
+                            </div>
+                            <div class="result-content">
+                                <h3><a href="notes.html">Python Basics Cheat Sheet</a></h3>
+                                <p class="result-description">Quick reference guide for Python syntax, variables, data types, and basic operations.</p>
+                                <div class="result-meta">
+                                    <span class="result-type">Notes</span>
+                                    <span class="result-course">Introduction to Computer Science</span>
+                                    <span class="result-format">PDF</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <span class="icon">❓</span>
+                            </div>
+                            <div class="result-content">
+                                <h3><a href="quiz.html">Variables and Data Types Quiz</a></h3>
+                                <p class="result-description">Test your knowledge of Python variables, data types, and basic programming concepts.</p>
+                                <div class="result-meta">
+                                    <span class="result-type">Quiz</span>
+                                    <span class="result-course">Introduction to Computer Science</span>
+                                    <span class="result-questions">10 questions</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <span class="icon">📚</span>
+                            </div>
+                            <div class="result-content">
+                                <h3><a href="#">Advanced Python Programming</a></h3>
+                                <p class="result-description">Dive deeper into Python with advanced concepts like object-oriented programming, decorators, and modules.</p>
+                                <div class="result-meta">
+                                    <span class="result-type">Course</span>
+                                    <span class="result-category">Technology</span>
+                                    <span class="result-duration">60 hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <span class="icon">🎥</span>
+                            </div>
+                            <div class="result-content">
+                                <h3><a href="#">Object-Oriented Programming in Python</a></h3>
+                                <p class="result-description">Learn how to create classes, objects, inheritance, and polymorphism in Python.</p>
+                                <div class="result-meta">
+                                    <span class="result-type">Lecture</span>
+                                    <span class="result-course">Advanced Python Programming</span>
+                                    <span class="result-duration">55 min</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <span class="icon">📝</span>
+                            </div>
+                            <div class="result-content">
+                                <h3><a href="#">OOP Concepts in Python</a></h3>
+                                <p class="result-description">Detailed notes on object-oriented programming principles with Python examples.</p>
+                                <div class="result-meta">
+                                    <span class="result-type">Notes</span>
+                                    <span class="result-course">Advanced Python Programming</span>
+                                    <span class="result-format">PDF</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <span class="icon">❓</span>
+                            </div>
+                            <div class="result-content">
+                                <h3><a href="#">OOP Quiz</a></h3>
+                                <p class="result-description">Assessment of your understanding of object-oriented programming concepts.</p>
+                                <div class="result-meta">
+                                    <span class="result-type">Quiz</span>
+                                    <span class="result-course">Advanced Python Programming</span>
+                                    <span class="result-questions">15 questions</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <span class="icon">📚</span>
+                            </div>
+                            <div class="result-content">
+                                <h3><a href="#">Data Science with Python</a></h3>
+                                <p class="result-description">Introduction to data analysis and visualization using Python libraries like Pandas and Matplotlib.</p>
+                                <div class="result-meta">
+                                    <span class="result-type">Course</span>
+                                    <span class="result-category">Technology</span>
+                                    <span class="result-duration">50 hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <span class="icon">🎥</span>
+                            </div>
+                            <div class="result-content">
+                                <h3><a href="#">Pandas for Data Analysis</a></h3>
+                                <p class="result-description">Learn how to manipulate and analyze data using the Pandas library in Python.</p>
+                                <div class="result-meta">
+                                    <span class="result-type">Lecture</span>
+                                    <span class="result-course">Data Science with Python</span>
+                                    <span class="result-duration">60 min</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <span class="icon">📝</span>
+                            </div>
+                            <div class="result-content">
+                                <h3><a href="#">Pandas Cheat Sheet</a></h3>
+                                <p class="result-description">Quick reference guide for common Pandas functions and data manipulation techniques.</p>
+                                <div class="result-meta">
+                                    <span class="result-type">Notes</span>
+                                    <span class="result-course">Data Science with Python</span>
+                                    <span class="result-format">PDF</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <span class="icon">❓</span>
+                            </div>
+                            <div class="result-content">
+                                <h3><a href="#">Data Analysis Quiz</a></h3>
+                                <p class="result-description">Test your knowledge of data analysis concepts and Pandas library usage.</p>
+                                <div class="result-meta">
+                                    <span class="result-type">Quiz</span>
+                                    <span class="result-course">Data Science with Python</span>
+                                    <span class="result-questions">12 questions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination">
+                        <button class="btn">Previous</button>
+                        <span class="page-info">Page 1 of 3</span>
+                        <button class="btn">Next</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EduBridge</h3>
+                    <p>Connecting rural colleges to quality education through technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@edubridge.edu</p>
+                    <p>Phone: +91 98765 43210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EduBridge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchForm = document.getElementById('searchForm');
+            const searchInput = document.getElementById('searchInput');
+            
+            if (searchForm) {
+                searchForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const searchTerm = searchInput.value.trim();
+                    if (searchTerm) {
+                        // In a real implementation, this would trigger an actual search
+                        alert(`Searching for: ${searchTerm}`);
+                        // Update the page title and results header with the new search term
+                        document.querySelector('.results-header h2').textContent = `Search Results for "${searchTerm}"`;
+                    }
+                });
+            }
+            
+            // Simulate search result highlighting
+            const searchTerm = searchInput.value.toLowerCase();
+            if (searchTerm) {
+                const resultItems = document.querySelectorAll('.result-content h3 a, .result-description');
+                resultItems.forEach(item => {
+                    const text = item.textContent;
+                    const regex = new RegExp(`(${searchTerm})`, 'gi');
+                    if (regex.test(text)) {
+                        item.innerHTML = text.replace(regex, '<mark>$1</mark>');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

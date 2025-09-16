@@ -1,0 +1,2 @@
+This directory is for images used in the EduBridge frontend.
+Placeholder file to ensure the directory exists.

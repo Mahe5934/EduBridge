@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - EduBridge</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>EduBridge</h1>
+                <p>Connecting Rural Colleges to Quality Education</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="lecture.html">Lecture</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="quiz.html" class="active">Quiz</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Variables and Data Types Quiz</h1>
+                <p>Introduction to Computer Science - Practice Quiz</p>
+            </div>
+        </section>
+
+        <section class="quiz-content">
+            <div class="container">
+                <div class="quiz-header">
+                    <div class="quiz-meta">
+                        <span class="course-name">Introduction to Computer Science</span>
+                        <span class="lecture-name">Introduction to Python Programming</span>
+                        <span class="question-count">10 Questions</span>
+                    </div>
+                    <div class="quiz-timer">
+                        <span>Time Remaining: <span id="timer">15:00</span></span>
+                    </div>
+                </div>
+
+                <div class="quiz-body">
+                    <form id="quizForm">
+                        <div class="question">
+                            <h3>Question 1 of 10</h3>
+                            <p>Which of the following is the correct way to assign a value to a variable in Python?</p>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q1" value="a">
+                                    <span class="option-text">var x = 5</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q1" value="b">
+                                    <span class="option-text">x := 5</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q1" value="c">
+                                    <span class="option-text">x = 5</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q1" value="d">
+                                    <span class="option-text">let x = 5</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3>Question 2 of 10</h3>
+                            <p>What data type is used to store decimal numbers in Python?</p>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q2" value="a">
+                                    <span class="option-text">int</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q2" value="b">
+                                    <span class="option-text">float</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q2" value="c">
+                                    <span class="option-text">decimal</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q2" value="d">
+                                    <span class="option-text">double</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3>Question 3 of 10</h3>
+                            <p>Which of the following is NOT a valid variable name in Python?</p>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q3" value="a">
+                                    <span class="option-text">myVariable</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q3" value="b">
+                                    <span class="option-text">_my_var</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q3" value="c">
+                                    <span class="option-text">2ndVariable</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q3" value="d">
+                                    <span class="option-text">variable2</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3>Question 4 of 10</h3>
+                            <p>What is the output of the following code: print(type(42))</p>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q4" value="a">
+                                    <span class="option-text"><class 'int'></span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q4" value="b">
+                                    <span class="option-text"><class 'float'></span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q4" value="c">
+                                    <span class="option-text"><class 'number'></span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q4" value="d">
+                                    <span class="option-text"><class 'integer'></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3>Question 5 of 10</h3>
+                            <p>Which operator is used for exponentiation in Python?</p>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q5" value="a">
+                                    <span class="option-text">^</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q5" value="b">
+                                    <span class="option-text">**</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q5" value="c">
+                                    <span class="option-text">*</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q5" value="d">
+                                    <span class="option-text">exp</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3>Question 6 of 10</h3>
+                            <p>What is the result of 10 % 3 in Python?</p>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q6" value="a">
+                                    <span class="option-text">3</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q6" value="b">
+                                    <span class="option-text">1</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q6" value="c">
+                                    <span class="option-text">0.33</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q6" value="d">
+                                    <span class="option-text">3.333</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3>Question 7 of 10</h3>
+                            <p>Which function is used to get the length of a string in Python?</p>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q7" value="a">
+                                    <span class="option-text">length()</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q7" value="b">
+                                    <span class="option-text">size()</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q7" value="c">
+                                    <span class="option-text">len()</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q7" value="d">
+                                    <span class="option-text">count()</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3>Question 8 of 10</h3>
+                            <p>What is the correct way to create a comment in Python?</p>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q8" value="a">
+                                    <span class="option-text">/* This is a comment */</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q8" value="b">
+                                    <span class="option-text">// This is a comment</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q8" value="c">
+                                    <span class="option-text"># This is a comment</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q8" value="d">
+                                    <span class="option-text"><!-- This is a comment --></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3>Question 9 of 10</h3>
+                            <p>Which data type is used to store True or False values in Python?</p>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q9" value="a">
+                                    <span class="option-text">boolean</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q9" value="b">
+                                    <span class="option-text">bool</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q9" value="c">
+                                    <span class="option-text">truefalse</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q9" value="d">
+                                    <span class="option-text">bit</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3>Question 10 of 10</h3>
+                            <p>What is the output of the following code: print(2 ** 3)</p>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q10" value="a">
+                                    <span class="option-text">6</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q10" value="b">
+                                    <span class="option-text">8</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q10" value="c">
+                                    <span class="option-text">9</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q10" value="d">
+                                    <span class="option-text">5</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-actions">
+                            <button type="button" class="btn" id="submitQuizBtn">Submit Quiz</button>
+                            <button type="button" class="btn btn-secondary" id="resetQuizBtn">Reset</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="quiz-results" id="quizResults" style="display: none;">
+                    <h2>Quiz Results</h2>
+                    <div class="result-summary">
+                        <p>Your Score: <span id="score">0</span> out of 10</p>
+                        <p>Percentage: <span id="percentage">0</span>%</p>
+                        <p id="resultMessage"></p>
+                    </div>
+                    <div class="result-details">
+                        <h3>Review Answers</h3>
+                        <div id="answerReview"></div>
+                    </div>
+                    <div class="quiz-actions">
+                        <a href="#" class="btn">Retake Quiz</a>
+                        <a href="course-detail.html" class="btn btn-secondary">Back to Course</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EduBridge</h3>
+                    <p>Connecting rural colleges to quality education through technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@edubridge.edu</p>
+                    <p>Phone: +91 98765 43210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EduBridge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const quizForm = document.getElementById('quizForm');
+            const submitQuizBtn = document.getElementById('submitQuizBtn');
+            const resetQuizBtn = document.getElementById('resetQuizBtn');
+            const quizResults = document.getElementById('quizResults');
+            const timerElement = document.getElementById('timer');
+            
+            // Quiz answers (in a real implementation, these would come from a database)
+            const correctAnswers = {
+                q1: 'c',
+                q2: 'b',
+                q3: 'c',
+                q4: 'a',
+                q5: 'b',
+                q6: 'b',
+                q7: 'c',
+                q8: 'c',
+                q9: 'b',
+                q10: 'b'
+            };
+            
+            // Timer functionality
+            let timeLeft = 15 * 60; // 15 minutes in seconds
+            let timerInterval;
+            
+            function startTimer() {
+                timerInterval = setInterval(() => {
+                    timeLeft--;
+                    const minutes = Math.floor(timeLeft / 60);
+                    const seconds = timeLeft % 60;
+                    timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                    
+                    if (timeLeft <= 0) {
+                        clearInterval(timerInterval);
+                        submitQuiz();
+                    }
+                }, 1000);
+            }
+            
+            // Start the timer when the page loads
+            startTimer();
+            
+            // Submit quiz function
+            function submitQuiz() {
+                clearInterval(timerInterval);
+                
+                let score = 0;
+                const userAnswers = {};
+                
+                // Get user answers
+                for (let i = 1; i <= 10; i++) {
+                    const questionName = `q${i}`;
+                    const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+                    if (selectedOption) {
+                        userAnswers[questionName] = selectedOption.value;
+                        if (selectedOption.value === correctAnswers[questionName]) {
+                            score++;
+                        }
+                    }
+                }
+                
+                // Calculate percentage
+                const percentage = Math.round((score / 10) * 10);
+                
+                // Display results
+                document.getElementById('score').textContent = score;
+                document.getElementById('percentage').textContent = percentage;
+                
+                // Display result message
+                const resultMessage = document.getElementById('resultMessage');
+                if (percentage >= 80) {
+                    resultMessage.textContent = 'Excellent! You have a strong understanding of the material.';
+                    resultMessage.style.color = 'green';
+                } else if (percentage >= 60) {
+                    resultMessage.textContent = 'Good job! You have a decent understanding of the material.';
+                    resultMessage.style.color = 'blue';
+                } else {
+                    resultMessage.textContent = 'Keep studying! Review the material and try again.';
+                    resultMessage.style.color = 'orange';
+                }
+                
+                // Show results section and hide quiz
+                quizForm.style.display = 'none';
+                quizResults.style.display = 'block';
+                
+                // Scroll to results
+                quizResults.scrollIntoView({ behavior: 'smooth' });
+            }
+            
+            // Reset quiz function
+            function resetQuiz() {
+                // Reset all radio buttons
+                const radioButtons = document.querySelectorAll('input[type="radio"]');
+                radioButtons.forEach(radio => {
+                    radio.checked = false;
+                });
+                
+                // Reset timer
+                clearInterval(timerInterval);
+                timeLeft = 15 * 60;
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                startTimer();
+                
+                // Hide results and show quiz
+                quizResults.style.display = 'none';
+                quizForm.style.display = 'block';
+            }
+            
+            // Event listeners
+            if (submitQuizBtn) {
+                submitQuizBtn.addEventListener('click', submitQuiz);
+            }
+            
+            if (resetQuizBtn) {
+                resetQuizBtn.addEventListener('click', resetQuiz);
+            }
+        });
+    </script>
+</body>
+</html>
