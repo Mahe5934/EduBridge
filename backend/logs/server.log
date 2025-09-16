@@ -23,3 +23,20 @@
 2025-09-16 17:45:06,757 - api - INFO - Handling GET request for /api/courses
 2025-09-16 17:50:25,757 - __main__ - INFO - GET request for /api/courses
 2025-09-16 17:50:25,757 - api - INFO - Handling GET request for /api/courses
+2025-09-16 18:07:09,337 - __main__ - INFO - GET request for /
+2025-09-16 18:07:09,603 - __main__ - INFO - GET request for /css/style.css
+2025-09-16 18:07:09,692 - __main__ - INFO - GET request for /js/main.js
+2025-09-16 18:07:09,744 - __main__ - INFO - GET request for /images/favicon.ico
+2025-09-16 18:07:16,941 - __main__ - INFO - GET request for /courses.html
+2025-09-16 18:07:17,208 - __main__ - INFO - GET request for /images/course1.jpg
+2025-09-16 18:07:17,287 - __main__ - INFO - GET request for /images/course3.jpg
+2025-09-16 18:07:17,289 - __main__ - INFO - GET request for /images/course2.jpg
+2025-09-16 18:07:17,306 - __main__ - INFO - GET request for /images/course4.jpg
+2025-09-16 18:07:17,309 - __main__ - INFO - GET request for /images/course5.jpg
+2025-09-16 18:07:17,312 - __main__ - INFO - GET request for /images/course6.jpg
+2025-09-16 18:07:17,522 - __main__ - INFO - GET request for /images/course7.jpg
+2025-09-16 18:07:17,596 - __main__ - INFO - GET request for /images/course8.jpg
+2025-09-16 18:07:19,833 - __main__ - INFO - GET request for /course-detail.html
+2025-09-16 18:07:22,554 - __main__ - INFO - GET request for /lecture.html
+2025-09-16 18:13:08,353 - __main__ - INFO - GET request for /api/courses
+2025-09-16 18:13:08,353 - api - INFO - Handling GET request for /api/courses
