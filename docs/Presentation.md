@@ -130,17 +130,17 @@ The frontend is built with pure HTML/CSS/JavaScript without external frameworks:
 EduBridge follows a client-server architecture with a clear separation between frontend and backend components:
 
 ```
-┌─────────┐    HTTP/JSON    ┌──────────────────┐
-│   Frontend      │◄───────────────►│    Backend       │
-│  (HTML/CSS/JS)  │                 │ (Python http.server)│
-└─────────────────┘                 └──────────────────┘
-                                              │
+┌─────────────────┐    HTTP/JSON       ┌──────────────────┐
+│   Frontend         │◄───────────────►│    Backend          │
+│  (HTML/CSS/JS)     │                    │ (Python http.server)│
+└─────────────────┘                    └──────────────────┘
+                                                │
                                     ┌─────────┴─────────┐
-                                    │                   │
+                                    │                      │
                           ┌─────────▼─────────┐ ┌───────▼────────┐
-                          │   Data Storage    │ │ Authentication │
-                          │   (JSON Files)    │ │   (Planned)    │
-                          └───────────────────┘ └────────────────┘
+                          │   Data Storage        │ │ Authentication    │
+                          │   (JSON Files)        │ │   (Planned)       │
+                          └───────────────────┘  └────────────────┘
 ```
 
 ### Backend Components
