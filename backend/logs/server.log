@@ -1,0 +1,6 @@
+2025-09-16 17:38:35,098 - __main__ - INFO - Created backend/data/courses.json with default content
+2025-09-16 17:38:35,099 - __main__ - INFO - Created backend/data/lectures.json with default content
+2025-09-16 17:38:35,100 - __main__ - INFO - Created backend/data/notes.json with default content
+2025-09-16 17:38:35,102 - __main__ - INFO - Created backend/data/quizzes.json with default content
+2025-09-16 17:38:35,105 - __main__ - INFO - EduBridge server started on port 8000
+2025-09-16 17:38:35,105 - __main__ - INFO - Visit http://localhost:8000 to access the application
