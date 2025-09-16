@@ -4,3 +4,18 @@
 2025-09-16 17:38:35,102 - __main__ - INFO - Created backend/data/quizzes.json with default content
 2025-09-16 17:38:35,105 - __main__ - INFO - EduBridge server started on port 8000
 2025-09-16 17:38:35,105 - __main__ - INFO - Visit http://localhost:8000 to access the application
+2025-09-16 17:43:39,667 - __main__ - INFO - GET request for /
+2025-09-16 17:43:39,837 - __main__ - INFO - GET request for /css/style.css
+2025-09-16 17:43:39,843 - __main__ - INFO - GET request for /js/main.js
+2025-09-16 17:43:39,905 - __main__ - INFO - GET request for /images/favicon.ico
+2025-09-16 17:43:42,089 - __main__ - INFO - GET request for /courses.html
+2025-09-16 17:43:42,134 - __main__ - INFO - GET request for /images/course1.jpg
+2025-09-16 17:43:42,135 - __main__ - INFO - GET request for /images/course2.jpg
+2025-09-16 17:43:42,138 - __main__ - INFO - GET request for /images/course3.jpg
+2025-09-16 17:43:42,151 - __main__ - INFO - GET request for /images/course4.jpg
+2025-09-16 17:43:42,165 - __main__ - INFO - GET request for /images/course5.jpg
+2025-09-16 17:43:42,168 - __main__ - INFO - GET request for /images/course6.jpg
+2025-09-16 17:43:42,170 - __main__ - INFO - GET request for /images/course7.jpg
+2025-09-16 17:43:42,175 - __main__ - INFO - GET request for /images/course8.jpg
+2025-09-16 17:43:45,419 - __main__ - INFO - GET request for /course-detail.html
+2025-09-16 17:43:50,533 - __main__ - INFO - GET request for /lecture.html
